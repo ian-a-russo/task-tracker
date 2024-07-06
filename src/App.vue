@@ -14,7 +14,7 @@
           :key="index"
           :tarefa="tarefa"
         />
-        <BoxLista v-if="listaEstaVazia">
+        <BoxLista v-if="listaEstaVazia" class="has-text-black">
           Você não está muito produtivo hoje :(
         </BoxLista>
       </div>
@@ -71,7 +71,6 @@ main {
 main.modo-escuro {
   --bg-primario: #343756;
   --texto-primario: #ddd;
-  transition: ;
 }
 .conteudo {
   background-color: var(--bg-primario);
